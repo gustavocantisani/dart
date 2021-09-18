@@ -1,4 +1,4 @@
 main() {
-  var total = "Olá" + "Karina";
+  var total = "Olá" + " " + "Karina";
   print(total);
 }
