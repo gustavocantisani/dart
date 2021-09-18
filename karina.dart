@@ -1,5 +1,4 @@
-main(){
-
-    var total = "Hello" + "world";
-    print(total);
+main() {
+  var total = "Olá" + "Karina";
+  print(total);
 }
