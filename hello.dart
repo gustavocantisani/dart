@@ -1,4 +1,4 @@
-main() {
+gimain() {
   var isTrue = 1 != 0;
 
   if (isTrue) {
