@@ -1,7 +1,9 @@
 main() {
-  print("Hello World");
-  print("Segunda impressão");
-  print("Terceira impressão");
-  print(20);
-  print(3.14);
+  var isTrue = 1 != 0;
+
+  if (isTrue) {
+    print("Isso é verdadeiro");
+  } else {
+    print("Não é verdadeiro");
+  }
 }
