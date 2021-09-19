@@ -1,6 +1,10 @@
 import 'dart:io';
 
 main() {
+  calculoImc();
+}
+
+calculoImc() {
   print("=== Digite seu peso ===");
   String textPeso = stdin.readLineSync() ?? "";
   int peso = int.parse(textPeso);
@@ -9,8 +13,15 @@ main() {
   String textAltura = stdin.readLineSync() ?? "";
   double altura = double.parse(textAltura);
 
-  var calculo = peso / (altura * altura);
+  double calculo = calcImcExpr(peso, altura);
+  imprimirResultado(calculo);
+}
 
+double calcImcExpr(int peso, double altura) {
+  return peso / (altura * altura);
+}
+
+imprimirResultado(double calculo) {
   print(calculo);
 
   if (calculo < 18.5) {
